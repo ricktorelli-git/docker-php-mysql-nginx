@@ -22,7 +22,7 @@ layout e make para automatizar as tarefas.
 ### Preparando o ambiente de desenvolvimento
 - Clone o repositório:
 ```bash
-git clone
+git clone git@github.com:ricktorelli-git/docker-php-mysql-nginx.git
 ```
 - Acesse o diretório do projeto:
 
