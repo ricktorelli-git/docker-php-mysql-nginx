@@ -41,11 +41,12 @@ DB_PASSWORD=password
 DB_PORT=3306
 PHPMYADMIN_PORT=8081
 REDIS_PORT=6379
-```
+````
 - Execute o comando 'make', este comando irá criar os containers e instalar as dependências do projeto.:
 ```bash
 make
 ````
+
 ### Acessando o projeto
 - Acesse o projeto em http://localhost
 - Acesse o phpmyadmin em http://localhost:8081 (DB_USER, DB_PASSWORD)
