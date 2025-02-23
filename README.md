@@ -26,14 +26,32 @@ git clone git@github.com:ricktorelli-git/docker-php-mysql-nginx.git
 ```
 - Acesse o diretório do projeto:
 
-- Execute o comando make para instalar o projeto completo:
+- Altere as variáveis de ambiente no arquivo .env.example
+````bash
+APP_NAME='Home do Projeto PHP'
+APP_DESCRIPTION='Projeto PHP com Docker'
+APP_AUTHOR='Seu Nome Completo'
+APP_PORT=80
+
+DB_HOST=mysql # Nome do container do mysql no docker-compose.yml
+DB_ROOT_PASSWORD=root
+DB_DATABASE=meu_banco_de_dados
+DB_USER=user
+DB_PASSWORD=password
+DB_PORT=3306
+PHPMYADMIN_PORT=8081
+REDIS_PORT=6379
+```
+- Execute o comando 'make', este comando irá criar os containers e instalar as dependências do projeto.:
 ```bash
 make
-```
+````
+### Acessando o projeto
 - Acesse o projeto em http://localhost
-- Acesse o phpmyadmin em http://localhost:8081
+- Acesse o phpmyadmin em http://localhost:8081 (DB_USER, DB_PASSWORD)
 - Acesse o redis em http://localhost:6379
 
+### Comandos úteis
 - Para parar os containers:
 ````bash
 docker-compose down
@@ -42,7 +60,6 @@ docker-compose down
 ````bash
 docker-compose down --volumes
 ````
-### Comandos úteis
 ```bash
 docker compose build --no-cache # Recria as imagens
 ```

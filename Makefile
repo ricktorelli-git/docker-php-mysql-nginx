@@ -1,6 +1,5 @@
 prepare:
 	@echo "--> Preparando ambiente..."
-	@echo "--> Iniciando o projeto..."
 	@sh ./bin/prepare.sh
 	@cp .env.example .env
 	@echo "--> Iniciando containers..."
