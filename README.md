@@ -46,7 +46,6 @@ REDIS_PORT=6379
 ```bash
 make
 ````
-
 ### Acessando o projeto
 - Acesse o projeto em http://localhost
 - Acesse o phpmyadmin em http://localhost:8081 (DB_USER, DB_PASSWORD)
