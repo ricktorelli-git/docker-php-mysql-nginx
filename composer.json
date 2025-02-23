@@ -1,6 +1,15 @@
 {
     "name": "rick-torelli/php-docker",
     "description": "Docker para desenvolvimento de aplicações PHP",
+    "type": "project",
+    "keywords": [
+        "docker",
+        "php",
+        "development"
+    ],
+    "license": [
+        "proprietary"
+    ],
     "autoload": {
         "psr-4": {
             "RickTorelli\\": "app/"
